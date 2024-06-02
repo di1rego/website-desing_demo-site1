@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- btn-up -->
+    <a href="#" class="btn-up"><img src="img/btn-up.png" alt="#"></a>
+    <!-- header -->
+    <header class="wrapper">
+        <div class="social_fixed">
+            <p><a href="#"><img src="img/Одноклассники.png" alt="#"></a></p>
+            <p><a href="#"><img src="img/ВКонтакте.png" alt="#"></a></p>
+            <p><a href="#"><img src="img/Телеграмм.png" alt="#"></a></p>
+        </div>
+        <div class="header_wrapper bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="index.html">Logo</a>
+                    <div class="contact header_contact">
+                        <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                        <p class="mb-0">г. Москва, Ленинградский просп., 17</p>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100vh;">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#screen1">Banner</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#screen2">Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#screen3">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#screen4">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- screen1 -->
+    <div class="screen1 wrapper" id="screen1">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner slider">
+                    <div class="carousel-item active">
+                        <img src="img/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- screen2 -->
+    <div class="screen2 wrapper" id="screen2">
+        <div class="container">
+            <div class="row card_wrapper">
+                <h2 class="text-light">Cards :</h2>
+                <div class="card_item col-4">
+                    <div class="card_body">
+                        <img src="img/1.jpg" alt="#">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates repellendus quasi
+                            nulla facere dolore.</p>
+                    </div>
+                    <button id="showModal" class="btn text-light">Подробнее</button>
+                    <dialog id="modal">
+                        <img src="img/1.jpg" alt="#">
+                        <p><i>31.05.2024</i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur eos iusto,
+                            in adipisci alias modi illum! Tempora totam enim, eum tempore architecto corporis quos
+                            excepturi reprehenderit voluptas pariatur voluptate!</p>
+                        <button id="closeModal">+</button>
+                    </dialog>
+                </div>
+                <div class="card_item col-4">
+                    <div class="card_body">
+                        <img src="img/2.jpg" alt="#">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates repellendus quasi
+                            nulla facere dolore.</p>
+                    </div>
+                    <button id="showModal_2" class="btn text-light">Подробнее</button>
+                    <dialog id="modal_2">
+                        <img src="img/2.jpg" alt="#">
+                        <p><i>01.06.2024</i></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum amet recusandae vel unde
+                            atque voluptates asperiores voluptatibus eius voluptate excepturi voluptatem nostrum
+                            quisquam sint sapiente accusantium vitae nemo, cum enim.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, impedit!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, impedit!</p>
+                        <button id="closeModal_2">+</button>
+                    </dialog>
+                </div>
+                <div class="card_item col-4">
+                    <div class="card_body">
+                        <img src="img/3.jpg" alt="#">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates repellendus quasi
+                            nulla facere dolore.</p>
+                    </div>
+                    <button id="showModal_3" class="btn text-light">Подробнее</button>
+                    <dialog id="modal_3">
+                        <img src="img/3.jpg" alt="#">
+                        <p><i>02.06.2024</i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus veniam deleniti
+                            voluptatum voluptate commodi eveniet consequuntur magni, nemo molestias, vero laudantium
+                            pariatur fugiat obcaecati reprehenderit tempora error itaque inventore?</p>
+                        <button id="closeModal_3">+</button>
+                    </dialog>
+                </div>
+                <div class="card_item col-4">
+                    <div class="card_body">
+                        <img src="img/4.jpg" alt="#">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates repellendus quasi
+                            nulla facere dolore.</p>
+                    </div>
+                    <button id="showModal_4" class="btn text-light">Подробнее</button>
+                    <dialog id="modal_4">
+                        <img src="img/4.jpg" alt="#">
+                        <p><i>03.06.2024</i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur porro sint alias
+                            suscipit accusamus, dignissimos velit tempore asperiores facilis amet perspiciatis expedita,
+                            sit at veritatis error quo impedit placeat doloremque.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem, ipsum.</p>
+                        <p>Lorem, ipsum.</p>
+                        <button id="closeModal_4">+</button>
+                    </dialog>
+                </div>
+                <div class="card_item col-4">
+                    <div class="card_body">
+                        <img src="img/1.jpg" alt="#">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates repellendus quasi
+                            nulla facere dolore.</p>
+                    </div>
+                    <button id="showModal_5" class="btn text-light">Подробнее</button>
+                    <dialog id="modal_5">
+                        <img src="img/1.jpg" alt="#">
+                        <p><i>05.06.2024</i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo quae nostrum in facere,
+                            accusantium ea consequatur sunt fuga dicta adipisci debitis porro, explicabo iste culpa
+                            pariatur voluptatum illo odit?</p>
+                        <button id="closeModal_5">+</button>
+                    </dialog>
+                </div>
+                <div class="card_item col-4">
+                    <div class="card_body">
+                        <img src="img/2.jpg" alt="#">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptates repellendus quasi
+                            nulla facere dolore.</p>
+                    </div>
+                    <button id="showModal_6" class="btn text-light">Подробнее</button>
+                    <dialog id="modal_6">
+                        <img src="img/2.jpg" alt="#">
+                        <p><i>06.06.2024</i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nemo voluptas reprehenderit
+                            nihil esse ea, quidem excepturi libero, alias tempora eaque atque, iusto sequi eius totam
+                            quisquam! Voluptatibus, nesciunt cumque.</p>
+                        <button id="closeModal_6">+</button>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- screen3 -->
+    <section class="event wrapper" id="screen3">
+        <div class="container">
+            <div class="row event_wrapper">
+                <h2 class="text-light">Events :</h2>
+                <div class="event_item">
+                    <div class="event_pic">
+                        <img src="img/1.jpg" alt="#">
+                    </div>
+                    <div class="event_body">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p><i>31.05.2024</i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illum deserunt vero libero non
+                            quas, natus doloremque adipisci id soluta enim, eos aliquid quaerat porro architecto! Nam
+                            reprehenderit ullam quam.</p>
+                        <button id="showModalForm" class="btn text-light">Зарегистрироваться</button>
+                        <dialog id="modalForm">
+                            <form action="" method="get">
+                                <h3 class="text-center"><i>Форма регистрации</i></h3>
+                                <label for="">Фамилия, имя и отчество:</label>
+                                <input type="text" placeholder="ФИО" required>
+                                <label for="">Форма участия:</label>
+                                <select name="" id="" required>
+                                    <option value="1">Очно</option>
+                                    <option value="2">Онлайн</option>
+                                </select>
+                                <label for="">Дата:</label>
+                                <input type="date" name="" id="" required>
+                                <div class="btn_wrapper">
+                                    <button type="reset" class="btn text-light">Очистить</button>
+                                    <button type="submit" class="btn text-light">Отправить</button>
+                                </div>
+                                <button id="closeModalForm">+</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <div class="event_item">
+                    <div class="event_pic">
+                        <img src="img/2.jpg" alt="#">
+                    </div>
+                    <div class="event_body">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p><i>01.06.2024</i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illum deserunt vero libero non
+                            quas, natus doloremque adipisci id soluta enim, eos aliquid quaerat porro architecto! Nam
+                            reprehenderit ullam quam.</p>
+                        <button id="showModalForm_2" class="btn text-light">Зарегистрироваться</button>
+                        <dialog id="modalForm_2">
+                            <form action="" method="get">
+                                <h3 class="text-center"><i>Форма регистрации</i></h3>
+                                <label for="">Фамилия, имя и отчество:</label>
+                                <input type="text" placeholder="ФИО" required>
+                                <label for="">Форма участия:</label>
+                                <select name="" id="" required>
+                                    <option value="1">Очно</option>
+                                    <option value="2">Онлайн</option>
+                                </select>
+                                <label for="">Дата:</label>
+                                <input type="date" name="" id="" required>
+                                <div class="btn_wrapper">
+                                    <button type="reset" class="btn text-light">Очистить</button>
+                                    <button type="submit" class="btn text-light">Отправить</button>
+                                </div>
+                                <button id="closeModalForm_2">+</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <div class="event_item">
+                    <div class="event_pic">
+                        <img src="img/3.jpg" alt="#">
+                    </div>
+                    <div class="event_body">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p><i>02.06.2024</i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illum deserunt vero libero non
+                            quas, natus doloremque adipisci id soluta enim, eos aliquid quaerat porro architecto! Nam
+                            reprehenderit ullam quam.</p>
+                        <button id="showModalForm_3" class="btn text-light">Зарегистрироваться</button>
+                        <dialog id="modalForm_3">
+                            <form action="" method="get">
+                                <h3 class="text-center"><i>Форма регистрации</i></h3>
+                                <label for="">Фамилия, имя и отчество:</label>
+                                <input type="text" placeholder="ФИО" required>
+                                <label for="">Форма участия:</label>
+                                <select name="" id="" required>
+                                    <option value="1">Очно</option>
+                                    <option value="2">Онлайн</option>
+                                </select>
+                                <label for="">Дата:</label>
+                                <input type="date" name="" id="" required>
+                                <div class="btn_wrapper">
+                                    <button type="reset" class="btn text-light">Очистить</button>
+                                    <button type="submit" class="btn text-light">Отправить</button>
+                                </div>
+                                <button id="closeModalForm_3">+</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer wrapper" id="screen4">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer_copy">
+                    <a href="index.html" class="logo">Logo</a>
+                    <p>Lorem ipsum dolor sit amet consectetur.<br>
+                        &#169; Р.Р. Рахимов, 2024
+                    </p>
+                </div>
+                <div class="contact">
+                    <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                    <p class="mb-0">г. Москва, Ленинградский просп., 17</p>
+                </div>
+                <div class="footerSocial">
+                    <a href="#"><img src="img/Одноклассники.png" alt="#"></a>
+                    <a href="#"><img src="img/ВКонтакте.png" alt="#"></a>
+                    <a href="#"><img src="img/Телеграмм.png" alt="#"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
